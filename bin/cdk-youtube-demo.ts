@@ -9,10 +9,10 @@ const app = new cdk.App();
 // Cloudfront stack
 new CloudfrontDemoStack(app, "CloudfrontDemoStack", {
   stage: "prod",
-  env: { account: "885121665536", region: "us-west-1" },
+  env: { account: "Your account id", region: "us-west-1" },
 });
 
 // Fargate stack
 new FargateDemoStack(app, "FargateDemoStack", {
-  env: { account: "885121665536", region: "us-west-1" },
+  env: { account: "Your account id", region: "us-west-1" },
 });
